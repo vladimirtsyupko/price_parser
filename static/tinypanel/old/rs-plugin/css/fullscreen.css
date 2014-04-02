@@ -1,0 +1,61 @@
+/*-----------------------------------------------------------------------------
+
+REVOLUTION RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	26/06/12
+author:		themepunch
+email:     	support@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+/**********************
+	-	RESET	-
+************************/
+.fullscreen-container div, .fullscreen-container span, .fullscreen-container applet, .fullscreen-container object, .fullscreen-container iframe, .fullscreen-container h1, .fullscreen-container h2, .fullscreen-container h3, .fullscreen-container h4, .fullscreen-container h5, .fullscreen-container h6, .fullscreen-container p, .fullscreen-container blockquote, .fullscreen-container pre, .fullscreen-container a, .fullscreen-container abbr, .fullscreen-container acronym, .fullscreen-container address, .fullscreen-container big, .fullscreen-container cite, .fullscreen-container code, .fullscreen-container del, .fullscreen-container dfn, .fullscreen-container em, .fullscreen-container font, .fullscreen-container img, .fullscreen-container ins, .fullscreen-container kbd, .fullscreen-container q, .fullscreen-container s, .fullscreen-container samp, .fullscreen-container small, .fullscreen-container strike, .fullscreen-container strong, .fullscreen-container sub, .fullscreen-container sup, .fullscreen-container tt, .fullscreen-container var, .fullscreen-container b, .fullscreen-container u, .fullscreen-container i, .fullscreen-container center, .fullscreen-container dl, .fullscreen-container dt, .fullscreen-container dd, .fullscreen-container ol, .fullscreen-container ul, .fullscreen-container li, .fullscreen-container fieldset, .fullscreen-container form, .fullscreen-container label, .fullscreen-container legend, .fullscreen-container table, .fullscreen-container caption, .fullscreen-container tbody, .fullscreen-container tfoot, .fullscreen-container thead, .fullscreen-container tr, .fullscreen-container th, .fullscreen-container td {
+    margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;
+}
+
+
+/***********************
+	-	BASICS 	-
+***********************/
+html {
+	overflow-x:hidden;
+	padding: 0 !important;
+	background:#fff;
+	margin:0px !important;
+}
+
+
+  /*********************************************************************************************
+		-	SET THE SCREEN SIZES FOR THE BANNER IF YOU WISH TO MAKE THE BANNER RESOPONSIVE 	-
+  **********************************************************************************************/
+
+  /*	-	THE BANNER CONTAINER (Padding, Shadow, Border etc. )	-	*/
+
+
+
+	.fullscreen-container {
+		width:100% !important;
+		position:relative;
+		padding:0;
+		height:100%;
+	}
+
+
+ /***************** THIS IS ONLY FOR DEMO , CAN BE DELETED **************/
+/*
+.bottomtexts-example,
+#topheader-to-offset 	{ position:relative;width:100%;min-height:120px;background-color:#421b3b; padding:30px 20px;box-sizing:border-box;-moz-box-sizing:border-box; text-align: center}
+
+.bottomtexts-example	{	background-color:#421b3b; padding:40px 20px}
+.bottomtexts-example h1,
+#topheader-to-offset h1	{ font-size:25px;line-height:35px; color:#fff; font-family:Arial; font-weight:300;margin-bottom:30px;text-align:center;}
+
+.bottomtexts-example p,
+#topheader-to-offset p	{ font-size:13px; line-height:18px; color:#fff; font-family:Arial; font-weight:300;}
+*/

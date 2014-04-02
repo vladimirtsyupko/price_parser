@@ -1,0 +1,14 @@
+product_id,price,price_usd,currency,when_created,source,title,heading,url,in_stock,image
+1,49.95,49.95,USD,2014-04-02 16:43:03.562659,walmart.com,,Philips Sonicare HX5610/01 Essence E5300 Power Toothbrush,http://www.walmart.com/ip/21264316,True,full/d3e11a070fb18ad3e158fc819a141dc48572ff15.jpg
+2,35.00,35.00,USD,2014-04-02 16:43:04.234900,walmart.com,,Google Chromecast HDMI Streaming Media Player,http://www.walmart.com/ip/33142918,True,full/1c52c47e1f00267d77bd86a88c6bbf0ebc770394.jpg
+1,49.95,49.95,USD,2014-04-02 16:43:04.590520,amazon.com,,Philips Sonicare Essence Rechargeable Electric Toothbrush,http://www.amazon.com/dp/B007ZN5ATQ,True,full/af23a0c88e0159faf72581561040d6a3e9eb87a9.jpg
+5,94.99,94.99,USD,2014-04-02 16:43:05.002256,walmart.com,,Roku 3 Streaming Player,http://www.walmart.com/ip/23423759,True,full/11a125ba8fabbd884d8a2ffa165f9fa1f3dbe90a.jpg
+2,35.00,35.00,USD,2014-04-02 16:43:05.044019,amazon.com,,Google Chromecast HDMI Streaming Media Player,http://www.amazon.com/dp/B00DR0PDNE,True,full/c2116df4db98e2b5392a12f5c3faec4292f1cd28.jpg
+6,98.00,98.00,USD,2014-04-02 16:43:05.620081,walmart.com,,New Apple TV with 1080p HD,http://www.walmart.com/ip/20606876,True,full/f90ae7d5f8bc02a2a118235ee84678d0e942ebf9.jpg
+5,199.00,331.29,GBP,2014-04-02 16:43:05.813434,amazon.co.uk,,Roku 3,http://www.amazon.co.uk/dp/B00BGGDVOO,True,full/e1410fb548e7f96620835ed4a238de2da25389c4.jpg
+7,139.00,139.00,USD,2014-04-02 16:43:06.627572,walmart.com,,Sony BDPS5100 Blu-ray Player,http://www.walmart.com/ip/23377579,True,full/208e916db320f46698003ac877f38cea78423edd.jpg
+5,94.99,94.99,USD,2014-04-02 16:43:06.697612,amazon.com,,Roku 3 Streaming Media Player,http://www.amazon.com/dp/B00BGGDVOO,True,full/91f0cd12ef15a0f7e76b2b71455e2bfa1ab14e6b.jpg
+3,95.00,95.00,USD,2014-04-02 16:43:07.018781,amazon.com,,Kindle Paperwhite,http://www.amazon.com/dp/B00AWH595M,True,
+6,104.99,174.78,GBP,2014-04-02 16:43:07.155015,amazon.co.uk,,Apple TV MD199LL/A,http://www.amazon.co.uk/dp/B007I5JT4S,True,full/d7887c7af15de6d6fd92e675cf4be5e538d26ea0.jpg
+6,92.95,92.95,USD,2014-04-02 16:43:07.298065,amazon.com,,Apple TV MD199LL/A,http://www.amazon.com/dp/B007I5JT4S,True,full/bb5ba3f933dfbab1b2df8cf0ef5db0ce49529594.jpg
+7,91.60,91.60,USD,2014-04-02 16:43:08.278263,amazon.com,,Sony BDP-S5100 3D Blu-ray Disc Player with Wi-Fi,http://www.amazon.com/dp/B00AWKC0JM,True,full/f966fb3ac68ac1c37a826c8b8b66688e7056de05.jpg

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Flight Tracker
+{% endblock pagetitle %}
+{% block content %}
+<div class="container w100">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">List of all Flights</div>
+                <div id="list">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <tr>
+                          <th>Flight Number</th>
+                          <th>Last Parsed</th>
+                          <th></th>
+                        </tr>
+                          {% for flight in flights %}
+                              <tr>
+                                  <td>{{ flight }}</td>
+                                  <td>{{ flight.last_parse_date }}</td>
+                                  <td><a href="{% url 'flight_detail' %}#statistics/{{ flight.id }}/">Show Statistics</a></td>
+                              </tr>
+                          {% endfor %}
+                       </table>
+                    </div>
+                </div>
+
+            </div>
+            <a href="{% url 'parse_flight' %}" class="btn">Try to parse another flight or update existing!</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

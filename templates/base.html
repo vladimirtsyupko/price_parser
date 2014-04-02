@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tinypanel</title>
+      {% load staticfiles %}
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="{% static 'aa100/images/' %}favicon.ico" />
+      <link rel="stylesheet" href="{% static 'aa100/js/components/bootstrap/dist/css/bootstrap.min.css' %}" />
+  		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  		<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" href="{% static 'aa100/css/main.css' %}" />
+  		<link rel="stylesheet" href="{% static 'aa100/css/kato.css' %}" />
+      <link rel="stylesheet" href="{% static 'tinypanel/fontello-bcaa0480/css/fontello.css' %}">
+      
+      <script src="{% static 'aa100/js/components/jquery/jquery-1.11.0.min.js' %}"></script>
+      <script src="{% static 'aa100/js/components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'aa100/js/components/underscore/underscore-min.js' %}"></script>
+      <script src="{% static 'aa100/js/components/backbone/backbone-min.js' %}"></script>
+      <script src="{% static 'aa100/js/components/highcharts/highstock.js' %}"></script>    
+      <!-- config -->
+      <script src="{% static 'aa100/js/scripts/config.js' %}"></script>
+      <!--  routes  -->
+      <script src="{% static 'aa100/js/scripts/routes/routes.js' %}"></script>
+      <!--  models -->
+      <script src="{% static 'aa100/js/scripts/models/flight.js' %}"></script>
+      <!-- collections  -->
+      <script src="{% static 'aa100/js/scripts/collections/flights.js' %}"></script>
+      <!-- views -->
+        <!-- statistics prices -->
+        <script src="{% static 'aa100/js/scripts/views/statistics_seats/statistic_seats.js' %}"></script>
+        <script src="{% static 'aa100/js/scripts/views/statistics_seats/statistics_seats.js' %}"></script>
+        <!-- statistics prices -->
+        <script src="{% static 'aa100/js/scripts/views/statistics_prices/statistic_prices.js' %}"></script>
+        <script src="{% static 'aa100/js/scripts/views/statistics_prices/statistics_prices.js' %}"></script>
+      <!-- application -->
+      <script src="{% static 'aa100/js/scripts/application.js' %}"></script>
+  </head>
+  <body>
+
+    <div id="wrapper">
+	
+		<!-- Sidebar -->
+		<aside id="sidebar-wrapper">
+			
+			<!-- Icons Sidebar -->
+			<ul class="sidebar-icon">
+				<li class="sidebar-header"><img src="{% static 'aa100/images/logo.png' %}" alt="Logo" /></li>
+        <li>
+          <a href="/flight_list/"><i class="icon-airport"></i></a>
+          <a href="/"><i class="icon-th"></i></a>
+          <a href="/"><i class="icon-gauge"></i></a>
+        </li>
+				<!--<li><a href="/"><i class="icon-dashboard icon-large"></i></a></li>-->
+				<!--<li><a href="/flight/#statistics/1/"><i class="icon-th-large icon-large"></i></a></li>-->
+        <!--<li><a href="#"><i class="icon-compass icon-large"></i></a></li>-->
+				<!--<li><a href="#"><i class="icon-book icon-large"></i></a></li>-->
+        <li></li>
+			</ul>
+			<!-- /Icons Sidebar -->
+
+		</aside>
+		<!-- /Sidebar -->
+		
+		<!-- Content area -->
+		<div id="content-wrapper">
+			
+			<!-- Site header -->
+			<header class="main-header">
+				
+				<!-- Page title -->
+				<h3>
+					<a id="show-menu" href="#" class="btn btn-primary"><i class="icon-reorder"></i></a>
+          {% block pagetitle %}
+          {% endblock pagetitle %}
+				</h3>
+				
+				<!-- Profile dropdown -->
+				<nav class="user-profile">
+					<a href="#" class="user-dropdown" data-toggle="dropdown">
+						<span>Demo</span>
+						<i class="icon-caret-down"></i>
+					</a>
+					<ul class="dropdown-menu" style="left: -31px;" role="menu">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages</a></li>
+						<li><a href="#">Tasks</a></li>
+						<li><a href="#">Show error</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</nav>
+
+			</header>
+			<!-- /Site header -->
+			
+			<!-- Main Content -->
+			<section class="main-content padding">
+				<div class="row">
+					
+					{% block content %}
+					{% endblock content %}
+
+				</div>
+			</section>
+			<!-- /Main Content -->
+
+		</div>
+		<!-- /Content area -->
+
+	</div>
+    
+  </body>
+</html>

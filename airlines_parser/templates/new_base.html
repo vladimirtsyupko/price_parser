@@ -1,0 +1,561 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'tinypanel/ico/favicon.png' %}">
+    <title>Welcome to TinyPanel</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'tinypanel/css/bootstrap.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'tinypanel/css/style.css' %}" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src ="tinypanel/js/html5shiv.js"></script>
+    <script src ="tinypanel/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'tinypanel/css/font-awesome.min.css' %}">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'tinypanel/rs-plugin/css/settings.css' %}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinypanel/rs-plugin/css/fullscreen.css' %}" media="screen" />
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <!-- <link rel="stylesheet" type="text/css" href="tinypanel/sharrre/sharrre.css" media="screen" /> -->
+    <link rel="stylesheet" href="{% static 'tinypanel/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'tinypanel/css/animation.css' %}">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{% static 'tinypanel/css/fontello-ie7.css' %}">
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
+    <header>
+      <div id="topheader-to-offset" class="container hidden">
+        <div class="topline row">
+          <div class="hidden-xs col-sm-6 col-md-6 col-lg-7 nopadl"><i class="fa fa-envelope bigicon"></i> <span><a href="tinypanel/#"  data-toggle="modal" data-target="#landingModal">TRY IT FREE</a></span> <i class="fa fa-phone bigicon"></i> <span>(818) 392 - 4634</span></div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 nopadr">
+            <div class="icons hidden-xs">
+            </div>
+            <div class="search pull-right">
+              <div class="search-input">
+                <form role="form">
+                  <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search"> 
+                </form>
+              </div>
+              <a href="tinypanel/#"><i class="fa fa-search bigicon"></i> </a>        
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fullscreen-container">
+        <div class="fullscreenbanner">
+          <ul>
+            <!-- First slide -->
+            <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+              <img src ="{% static 'tinypanel/images/transparent.png' %}" style="background-color:#c3544e; " alt="">
+              <div class="caption sl_text sfl"
+                data-x="71"
+                data-y="90"
+                data-speed="300"
+                data-start="800"
+                data-easing="easeOutExpo"  >Real-time Price Comparison</div>
+              <!--
+                <div class="caption sl_text2 sfr"
+                								data-x="251"
+                								data-y="90"
+                								data-speed="300"
+                								data-start="800"
+                								data-easing="easeOutExpo"  >Price Comparison</div>
+                -->
+              <div class="caption sfb hidden-xs"
+                data-x="110"
+                data-y="240"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo"  >
+                <div class="sliderblock1">
+                  <div class="text pull-left">
+                    <h2>Price Intelligence</h2>
+                    <p>Tinypanel is the quickest way to compare prices on any number of products or websites, in real-time, and in any geography or language.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="caption sfb hidden-sm hidden-xs"
+                data-x="0"
+                data-y="420"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo"  >
+                <div class="sliderblock2">
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="caption sfb"
+                data-x="510"
+                data-y="10"
+                data-speed="300"
+                data-start="1600"
+                data-easing="easeOutExpo"  ><img src ="{% static 'tinypanel/images/slide-1.png' %}" alt="Product1"></div>
+            </li>
+            <!-- Second slide -->
+            <!--
+<li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+              <img src ="{% static 'tinypanel/images/transparent.png' %}" style="background-color:#c3544e; " alt="">
+              <div class="caption sl_text sfl"
+                data-x="71"
+                data-y="90"
+                data-speed="300"
+                data-start="800"
+                data-easing="easeOutExpo"  >Simplicty</div>
+              <div class="caption sl_text2 sfr"
+                data-x="251"
+                data-y="90"
+                data-speed="300"
+                data-start="800"
+                data-easing="easeOutExpo"  >re-defined</div>
+              <div class="caption sfb hidden-xs"
+                data-x="-25"
+                data-y="240"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo"  >
+                <div class="sliderblock1">
+                  <div class="text pull-left">
+                    <h2>As you like it</h2>
+                    <p>Data is only useful when it doesn't require a data-scientist. Tinypanel is designed around beign as easy to use as possible. Download data and view in excel, or view products and compare them online.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="caption sfb"
+                data-x="510"
+                data-y="10"
+                data-speed="300"
+                data-start="1600"
+                data-easing="easeOutExpo"  ><img src ="{% static 'tinypanel/images/slide-2.png' %}" alt="Product1"></div>
+            </li>
+-->
+            <!-- Third slide -->
+            <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+              <img src ="{% static 'tinypanel/images/transparent.png' %}" style="background-color:#c3544e; " alt="">
+              <div class="caption sl_text sfl"
+                data-x="71"
+                data-y="90"
+                data-speed="300"
+                data-start="800"
+                data-easing="easeOutExpo"  >We work</div>
+              <div class="caption sl_text2 sfr"
+                data-x="251"
+                data-y="90"
+                data-speed="300"
+                data-start="800"
+                data-easing="easeOutExpo"  >Anywhere you do</div>
+              <div class="caption sfb hidden-xs"
+                data-x="95"
+                data-y="240"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo"  >
+                <div class="sliderblock1">
+                  <div class="text pull-left">
+                    <h2>Mobile ready</h2>
+                    <p>View all our data from any device using the same interface. All features and all still in real-time.
+                    </p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="caption sfb hidden-sm hidden-xs"
+                data-x="0"
+                data-y="420"
+                data-speed="300"
+                data-start="1400"
+                data-easing="easeOutExpo"  >
+              </div>
+              <div class="caption sfb"
+                data-x="504"
+                data-y="36"
+                data-speed="300"
+                data-start="1800"
+                data-easing="easeOutExpo"  ><img src ="{% static 'tinypanel/images/slide-3.png' %}" alt="Product 2"></div>
+            </li>
+          </ul>
+          <div class="tp-bannertimer"></div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-default index" role="navigation">
+      <div class="container">
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">TinyPanel</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#benefits">Features</a></li>
+              <li><a href="#ourapps">Apps</a></li>
+              <li><a href="#meetteam">Team</a></li>
+              <li><a href="#contactus">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <button type="submit" class="btn btn-default btn-lg" data-toggle="modal" data-target="#landingModal">Try it Free</button>
+            </form>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+      </div>
+    </nav>
+    <!-- benefits section -->
+    <div id="benefits">
+      <div class="container ">
+        <div class="row">
+          <div class="row">
+            <h2 class="m25auto">Features</h2>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc">
+                  <h3 class="text-left"><i class="icon-resize-full f18white"></i>  Full product coverage</h3>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc">
+                  <p class="text-center">TinyPanel's catalog includes over 100,000 products from the most popular e-commerce sites.
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 boder-left-right">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc">
+                  <h3 class="text-left"><i class="icon-globe f18white"></i> International Coverage</h3>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc text-center">
+                  <p class="text-center">Tinypanel covers the most popular e-commerce websites around the world. The product is not limited by language or geography.
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc">
+                  <h3 class="text-left"><i class="icon-dollar f18white"></i>  Transparent Pricing</h3>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 benefitdesc  text-center">
+                  <p class="text-center">Our product is priced at $1,000 a month for every 1,000 products tracked (checked once per day). Additional websites (after the first) are $250 a month. More frequent tracking or custom projects (such as airline prices) starts at $2,000 a month. No contract is required and discounts are available for longer contracts.
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row projectline">
+          <div class="timeline hidden-xs">
+            <div class="upsteps">
+              <div class="step2 pull-left">Try a sample of our live data</div>
+              <div class="step4 pull-left">Receive a quote</div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="line">
+              <hr />
+              <div class="point1">
+                <div class="stickdown"></div>
+                <div class="whitecircle"></div>
+              </div>
+              <div class="point2">
+                <div class="stickup"></div>
+                <div class="whitecircle"></div>
+              </div>
+              <div class="point3">
+                <div class="stickdown"></div>
+                <div class="whitecircle"></div>
+              </div>
+              <div class="point4">
+                <div class="stickup"></div>
+                <div class="whitecircle"></div>
+              </div>
+              <div class="point5">
+                <div class="stickdown"></div>
+                <div class="whitecircle"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="botsteps">
+              <div class="step1 pull-left">Sign up for a trial</div>
+              <div class="step3 pull-left">Request a list of SKU's or products</div>
+              <div class="step5 pull-left">Your account is live within 24 hours</div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="quotebutton">
+            <form>
+              <button type="button"  data-toggle="modal" data-target="#landingModal" class="btn btn-transparent btn-lg landingModal">Try it free</button>
+            </form>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END benefits section -->
+    <!-- news letter sign up -->
+    <div id="newsletter" class="hidden">
+      <div class="container ">
+        <div class="row">
+          <div class="pull-left ltext">
+            <div class="pull-left newsletterdesc">
+              <h2 class="text-right">Try it free</h2>
+              <p class="text-right">Interested in TinyPanel?<br /> Sign up to try it free.</p>
+              <hr />
+            </div>
+            <div class="pull-left limg"><img src ="{% static 'tinypanel/images/box.png' %}" alt="" /></div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="pull-left lform">
+            <form method="POST"  action="https://docs.google.com/spreadsheet/formResponse?formkey=dFdZa254eXhzQmRXYUhKR2VyQU03eWc6MQ&ifq" role="form" class="form-inline ">
+              <input type="text" class="form-control name " name="entry.0.single" id="exampleInputName" placeholder="Name"> 
+              <input type="text" class="form-control email " name="entry.1.single"  id="exampleInputEmail" placeholder="Email"> 
+              <textarea name="entry.2.single" id="message" class="form-control hidden" rows="3" placeholder="What kind of data are you interested in obtaining?"></textarea>
+              <input type="hidden" name="draftResponse" value="[]">
+              <input type="hidden" name="pageHistory" value="0">
+              <input type="submit" name="submit" value="Submit" class="btn btn-default btn-lg pull-right">
+            </form>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END news letter sign up -->
+    <div class="clearfix"></div>
+    
+    <div class="col-lg-4" style="padding:0">
+      <div style="background: url(/static/tinypanel/images/scrapper_3.jpg) 0 50% no-repeat;min-height: 450px;width: 100%;background-size: cover;"></div>      
+    </div>
+    <div class="col-lg-4" style="padding:0">
+      <div style="background: url(/static/tinypanel/images/scrapper_2.jpg) 0 50% no-repeat;min-height: 450px;width: 100%;background-size: cover;"></div>
+    </div>
+    <div class="col-lg-4" style="padding:0">
+      <div style="background: url(/static/tinypanel/images/scrapper_1.jpg) 0 50% no-repeat;min-height: 450px;width: 100%;background-size: 100%;"></div>      
+    </div>
+    <div class="clearfix"></div>
+    
+    <!-- our apps -->
+    <!-- <div id="ourapps" class="bg100p" style="background:url({% static 'tinypanel/images/slide-4.jpg' %}) 0 50% no-repeat;min-height:450px;width:100%;"> -->
+      <!--
+        <div class="container">                
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+        
+                                    
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+        -->
+    <!-- </div> -->
+    <!-- apps slider -->
+    <div id="ourappsslider">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="m25auto grey">Features</h2>
+          <p>Export data to Excel or csv</p>
+          <p>Alert system to find out when a significant price spike or discount occurs</p>
+          <p>International support for any language or e-commerce website</p>
+          <p>Request additional products within 24 hours by product name or SKU</p>
+          <p>View all products tracked in one list, or filter by category, product type, or name</p>
+          <p>View additional meta-data along with the product including: Brand, In stock/out of stock, Photo, Product	name </p>
+          <p>Compare prices across multiple stores in real-time or against historical data</p>
+          <br /><br /><br />
+        </div>
+      </div>
+    </div>
+    <!-- END our apps -->
+    <!-- meet the team -->
+    <div id="meetteam">
+      <div class="container">
+        <div class="row">
+          <div class="row teammemebers">
+            <h2 class="m25auto">Meet the Team</h2>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-7 col-lg-8 teamdesc">
+                  <h3>Sebastien LeMenager</h3>
+                  <p class="position">Ceo &amp; Founder</p>
+                  <p>Before starting TinyPanel, Matthew worked for several Fortune 500 companies overseeing sourcing and operations. Matt began thinking about monitoring prices while frustrated at not being able to get a holistic view on where to source the best deals at any given moment.
+                  </p>
+                  <hr />
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-5 col-lg-4">
+                  <div class="r50p">
+                    <img src ="{% static 'tinypanel/images/user_2.jpg' %}" alt="" />
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-7 col-lg-8 teamdesc">
+                  <h3>Jonathan Gitlen</h3>
+                  <p class="position">CTO &amp; Co Founder</p>
+                  <p>Will leads technical development at TinyPanel, ensuring the site continues to work from 1,000 products to over 100,000.
+                  </p>
+                  <hr />
+                </div>
+                <div class="col-xs-3 col-sm-3 col-lg-4 col-md-5">
+                  <div class="r50p">
+                    <img src ="{% static 'tinypanel/images/user_1.jpg' %}" alt="" />
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END meet the team -->
+    <!-- MAP -->
+    <div id="googleMap"></div>
+    <!-- END MAP -->
+    <div id="contactus">
+      <div class="container">
+        <div class="row topdesc">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2 class="text-center m25auto">Contact Us</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="text-center"> Please get in touch if you have any questions about the service, or to tell us what kinds of products you are interested in monitoring.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-4 col-md-offset-0 col-md-4 col-sm-offset-0 col-sm-6 col-xs-12">
+            <form  method="POST"  action="https://docs.google.com/spreadsheet/formResponse?formkey=dFdZa254eXhzQmRXYUhKR2VyQU03eWc6MQ&ifq" role="form">
+              <input type="text" name="entry.0.single" class="form-control namebot" id="exampleInputNameBot" placeholder="Name"> 
+              <input type="text" name="entry.1.single" class="form-control emailbot " id="exampleInputEmailBot" placeholder="Email"> 
+              <textarea name="entry.2.single" id="message" class="form-control" rows="3" placeholder="What kind of data are you interested in obtaining?"></textarea>
+              <input type="submit" name="submit" value="Submit" id="ss-submit"  class="btn btn-transparent">
+            </form>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col2">
+            <h3>Address</h3>
+            <div class="botblock">
+              <div class="pull-left"><i class="fa fa-building"></i></div>
+              <div class="pull-left text">
+                <p>Sebastien LeMenager<br>
+                  465 Chestnut Street<br>
+                  San Francisco, CA 94123
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <h3>Phone</h3>
+            <div class="botblock">
+              <div class="pull-left"><i class="fa fa-mobile-phone"></i></div>
+              <div class="pull-left text">
+                <p>(415) 243-523</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="botblock">
+              <div class="pull-left"></div>
+              <div class="pull-left text">
+                <p></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col3">
+            <!-- <h3>Social Networks</h3>
+              <div class="botblock sociallinks">
+                  <a href="tinypanel/#"><i class="fa fa-facebook-square"></i></a>
+                  <a href="tinypanel/#"><i class="fa fa-twitter"></i></a>
+                  <a href="tinypanel/#"><i class="fa fa-google-plus"></i></a>
+                  <a href="tinypanel/#"><i class="fa fa-dribbble"></i></a>
+                  <a href="tinypanel/#"><i class="fa fa-cloud"></i></a>
+                  <a href="tinypanel/#"><i class="fa fa-rss"></i></a>
+              </div>
+              <h3>Add us on Skype</h3>
+              <div class="botblock">
+                  <div class="pull-left"><i class="fa fa-skype"></i></div>
+                  <div class="pull-left text">
+                      <p>Skype_name_here</p>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+              <h3>Hire Us</h3>
+              <div class="botblock">
+                  <div class="pull-left"><img src ="tinypanel/images/odesk-logo.png" alt="" /></div>
+                  <div class="pull-left text">
+                      <p><a href="tinypanel/#">oDesk profile link</a></p>
+                  </div> -->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row botline">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          Copyright 2013 Tinypanel.com
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="landingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <form  method="POST"  action="https://docs.google.com/spreadsheet/formResponse?formkey=dFdZa254eXhzQmRXYUhKR2VyQU03eWc6MQ&ifq" role="form">
+              <input type="text" name="entry.0.single" class="form-control namebot" id="exampleInputNameBot" placeholder="Name"> 
+              <input type="text" name="entry.1.single" class="form-control emailbot " id="exampleInputEmailBot" placeholder="Email"> 
+              <textarea name="entry.2.single" id="message" class="form-control" rows="3" placeholder="What kind of data are you interested in obtaining?"></textarea>
+              <input type="hidden" name="draftResponse" value="[]">
+              <input type="hidden" name="pageHistory" value="0">
+              <input type="submit" name="submit" value="Submit" class="btn btn btn-transparent">
+            </form>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src ="{% static 'tinypanel/js/jquery-2.0.3.min.js' %}"></script>
+    <script src ="{% static 'tinypanel/js/bootstrap.min.js' %}"></script>
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src ="{% static 'tinypanel/rs-plugin/pluginsources/jquery.themepunch.plugins.min.js' %}"></script>
+    <script type="text/javascript" src ="{% static 'tinypanel/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <!-- Google map -->
+    <script src ="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+    <script type="text/javascript" src ="{% static 'tinypanel/js/template.js' %}"></script>
+    <!-- Retina  -->
+    <script src ="{% static 'tinypanel/js/retina.js' %}"></script>
+  </body>
+</html>

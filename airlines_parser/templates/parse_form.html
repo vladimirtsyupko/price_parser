@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+<script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css"/>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/widgets.css"/>
+<script type="text/javascript" src="/admin/jsi18n/"></script>
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+
+{% block pagetitle %}
+Flight Tracker
+{% endblock pagetitle %}
+
+<div class="container w100">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>Parsed a new Flight</h1>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Flight Parse Form</div>
+                <div id="form">
+                    <form enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                    {{ form.media }}
+                    {{ form.as_ul }}
+                    <input type="submit"  value="Submit"/>
+                    </form>
+                </div>
+            </div>
+            <a href="{% url 'flight_list' %}" >Go back to the results</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
